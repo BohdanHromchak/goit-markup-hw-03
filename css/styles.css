@@ -1,0 +1,188 @@
+:root {
+    --secondary-background-color: #2F303A;
+    --another-background-color: #F5F4FA;
+    --button-background-focus: #188CE8;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --primary-black-color: #000000;
+    --footer-location-color: #FFFFFF99;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+}
+.list {
+    list-style: none;
+}
+
+/* Хедер */
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.38;
+    color: var(--primary-black-color);
+}
+.logo-first-word {
+    color: var(--accent-color); 
+}
+.header-link-nav {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.header-link-nav:hover, .header-link-nav:focus {
+    color: var(--accent-color);
+}
+.header-link-item {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.header-link-item:hover, .header-link-item:focus {
+    color: var(--accent-color);
+}
+.header-link-nav.current {
+    color: var(--accent-color);
+}
+
+/* Футер */
+.footer {
+    background-color: var(--secondary-background-color);
+}
+.address {
+    font-style: normal;
+}
+.logo-second-word {
+    color: var(--primary-white-color);
+}
+.footer-link-location {
+    text-decoration: none;
+    line-height: 1.71;
+    color: var(--primary-white-color);
+}
+.footer-link-item {
+    text-decoration: none;
+    line-height: 1.71;
+    color: var(--footer-location-color);
+}
+.footer-link-location:hover, .footer-link-location:focus {
+    color: var(--accent-color);
+}
+.footer-link-item:hover, .footer-link-item:focus {
+    color: var(--accent-color);
+}
+
+/* index.html */
+.title {
+    background-color: var(--secondary-background-color);
+}
+.hero-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+}
+.hero-button {
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.hero-button:hover, .hero-button:focus {
+    background-color: var(--button-background-focus);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.post-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+}
+.subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+}
+.text {
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+.team-section {
+    background-color: var(--another-background-color);
+}
+.team-member-card {
+    background-color: var(--primary-white-color);
+}
+.team-member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+}
+.team-member-position {
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--secondary-text-color);
+}
+
+/* portfolio.html */
+.menu-button {
+    border: none;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--another-background-color);
+}
+.menu-button:hover, .menu-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.product-link {
+    text-decoration: none;
+}
+.product-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.product-tag {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-text-color);
+}
