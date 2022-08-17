@@ -30,10 +30,23 @@ body {
 }
 .list {
   list-style: none;
+  display: flex;
 }
 
 /* Хедер */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 15px;
+  outline: 3px solid tomato;
+  align-items: center;
+
+}
 .logo {
+  /* margin: 0; */
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -44,7 +57,12 @@ body {
 .logo-first-word {
   color: var(--accent-color);
 }
+/* .header-page-nav {
+  margin: 0;
+} */
 .header-link-nav {
+  /* margin: auto 50px; */
+
   text-decoration: none;
   font-weight: 500;
   line-height: 1.17;
