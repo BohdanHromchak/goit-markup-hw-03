@@ -26,6 +26,16 @@ body {
 .list {
   list-style: none;
   display: flex;
+  margin: 0 auto;
+}
+ul,
+h1,
+h2,
+h3 {
+  margin: 0 auto;
+}
+.container {
+  width: 1200px; 
 }
 
 /* Хедер */
@@ -33,15 +43,20 @@ body {
 .header-nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 24px 15px;
-  outline: 3px solid tomato;
   align-items: center;
-
+}
+.header-site-nav {
+  padding: 0;
+  margin: 0;
+}
+.site-nav:not(:last-child) {
+  margin-right: 50px;
 }
 .logo {
-  /* margin: 0; */
+  margin-right: 93px;
+
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -52,12 +67,7 @@ body {
 .logo-first-word {
   color: var(--accent-color);
 }
-.header-page-nav {
-  margin: 0;
-}
 .header-link-nav {
-  /* margin: auto 50px; */
-
   text-decoration: none;
   font-weight: 500;
   line-height: 1.17;
@@ -67,6 +77,9 @@ body {
 .header-link-nav:hover,
 .header-link-nav:focus {
   color: var(--accent-color);
+}
+.site-item:not(:last-child) {
+  margin-right: 50px;
 }
 .header-link-item {
   text-decoration: none;
@@ -84,6 +97,13 @@ body {
 }
 
 /* Футер */
+.page-footer {
+    margin: 0 auto;
+  padding: 60px 15px;
+}
+.footer-address {
+  display: block;
+}
 .footer {
   background-color: var(--secondary-background-color);
 }
