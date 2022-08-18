@@ -33,6 +33,7 @@ h1,
 h2,
 h3 {
   margin: 0 auto;
+  padding: 0;
 }
 .container {
   width: 1200px; 
@@ -54,9 +55,10 @@ h3 {
 .site-nav:not(:last-child) {
   margin-right: 50px;
 }
-.logo {
+.header-logo {
   margin-right: 93px;
-
+}
+.logo {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -102,7 +104,14 @@ h3 {
   padding: 60px 15px;
 }
 .footer-address {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer {
   background-color: var(--secondary-background-color);
@@ -133,10 +142,21 @@ h3 {
 }
 
 /* index.html */
+
+.hero-container {
+    margin: 0 auto;
+ padding: 200px 300px;
+    text-align: center;
+}
+
 .title {
   background-color: var(--secondary-background-color);
 }
+
 .hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -144,7 +164,11 @@ h3 {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
+
 .hero-button {
+padding: 10px 32px;
+margin: 0 auto;
+
   cursor: pointer;
   border: none;
   font-weight: 700;
