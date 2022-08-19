@@ -36,7 +36,10 @@ h3 {
   padding: 0;
 }
 .container {
-  width: 1200px; 
+  width: 1200px;
+}
+.section {
+  padding: 94px;
 }
 
 /* Хедер */
@@ -57,6 +60,10 @@ h3 {
 }
 .header-logo {
   margin-right: 93px;
+}
+.header-item {
+  margin: 0;
+  margin-left: 344px;
 }
 .logo {
   text-decoration: none;
@@ -100,7 +107,7 @@ h3 {
 
 /* Футер */
 .page-footer {
-    margin: 0 auto;
+  margin: 0 auto;
   padding: 60px 15px;
 }
 .footer-address {
@@ -144,11 +151,42 @@ h3 {
 /* index.html */
 
 .hero-container {
-    margin: 0 auto;
- padding: 200px 300px;
-    text-align: center;
+  margin: 0 auto;
+  padding: 200px 0;
+  text-align: center;
 }
+.values-section {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.values-section-item:not(:last-child) {
+  margin-right: 30px;
+}
+.activities-section {
+margin: 0 auto;
+}
+.main-content {
+  padding-top: 0;
+}
+.activities-section-images  {
+  display: flex;
+  justify-content: center;
+  }
+.activity-image:not(:last-child) {
+margin-right: 30px;
+}  
+.teammates-section {
+  margin: 0 auto;
+}
+.teammates-list {
 
+  display: flex;
+  justify-content: center;
+}
+.team-member-card:not(:last-child) {
+margin-right: 30px;
+}
 .title {
   background-color: var(--secondary-background-color);
 }
@@ -166,8 +204,8 @@ h3 {
 }
 
 .hero-button {
-padding: 10px 32px;
-margin: 0 auto;
+  padding: 10px 32px;
+  margin: 0 auto;
 
   cursor: pointer;
   border: none;
@@ -195,12 +233,18 @@ margin: 0 auto;
   margin: -1px;
 }
 .post-title {
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--primary-text-color);
 }
 .subtitle {
+  width: 270px;
+  margin-bottom: 10px;
+
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -208,6 +252,9 @@ margin: 0 auto;
   color: var(--primary-text-color);
 }
 .text {
+  width: 270px;
+  margin: 0;
+
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -218,6 +265,8 @@ margin: 0 auto;
   background-color: var(--primary-white-color);
 }
 .team-member-name {
+  margin-top: 30px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
