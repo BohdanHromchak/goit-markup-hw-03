@@ -14,6 +14,7 @@
   --footer-location-color: #ffffff99;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+  --border-color: #EEEEEE;
 }
 
 body {
@@ -149,7 +150,6 @@ h3 {
 }
 
 /* index.html */
-
 .hero-container {
   margin: 0 auto;
   padding: 200px 0;
@@ -164,28 +164,27 @@ h3 {
   margin-right: 30px;
 }
 .activities-section {
-margin: 0 auto;
+  margin: 0 auto;
 }
 .main-content {
   padding-top: 0;
 }
-.activities-section-images  {
+.activities-section-images {
   display: flex;
   justify-content: center;
-  }
+}
 .activity-image:not(:last-child) {
-margin-right: 30px;
-}  
+  margin-right: 30px;
+}
 .teammates-section {
   margin: 0 auto;
 }
 .teammates-list {
-
   display: flex;
   justify-content: center;
 }
 .team-member-card:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
 .title {
   background-color: var(--secondary-background-color);
@@ -266,20 +265,74 @@ margin-right: 30px;
 }
 .team-member-name {
   margin-top: 30px;
-  
+  margin-bottom: 10px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   color: var(--primary-text-color);
 }
 .team-member-position {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+
   font-size: 16px;
   line-height: 1.17;
   color: var(--secondary-text-color);
 }
 
 /* portfolio.html */
+.button-section {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 0 50px;
+
+}
+.button-item {
+  margin: 0;
+  padding: 0;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+.product-section {
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+.product-list {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-caption {
+  padding: 19px 23px;
+  border: 1px solid var(--border-color);
+}
+
+.product-list-item {
+  margin: 0 auto;
+  padding: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.product-list-item-right-margin {
+  margin: 0;
+    margin-bottom: 30px;
+}
+
 .menu-button {
+  padding: 6px 22px;
+
+  border-radius: 4px;
   border: none;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
@@ -298,6 +351,8 @@ margin-right: 30px;
   text-decoration: none;
 }
 .product-name {
+margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -305,6 +360,8 @@ margin-right: 30px;
   color: var(--primary-text-color);
 }
 .product-tag {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
